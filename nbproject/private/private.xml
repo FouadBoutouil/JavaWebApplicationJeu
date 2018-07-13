@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/src/java/atos/shop/entity/Client.java</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/src/java/atos/shop/dao/ClientDao.java</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/web/_MenuHomePage.jsp</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/src/java/atos/shop/service/ClientService.java</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/src/java/atos/shop/servelet/MonCompte.java</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/web/_THEME.jsp</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/web/login.jsp</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/web/MonCompte.jsp</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/src/java/atos/shop/servelet/DeconecterClient.java</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/src/java/atos/shop/servelet/LoginServelet.java</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/web/css/jamaique.css</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/src/java/atos/shop/servelet/ajouterClientServelet.java</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/web/_CONTENU.jsp</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/web/HomePage.jsp</file>
+            <file>file:/C:/Users/Administrateur/Documents/NetBeansProjects/atelierJavaWeb/src/java/atos/shop/servelet/HomePage.java</file>
+        </group>
+    </open-files>
+</project-private>
