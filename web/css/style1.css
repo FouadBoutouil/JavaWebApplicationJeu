@@ -1,0 +1,41 @@
+body{
+    background:linear-gradient(to bottom right, black, yellow);
+    display: flex;
+    vertical-align: 30% auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    
+}
+
+div#cardre{
+    margin-top: 17%;
+    margin-left: 30%;
+    background-color: blue;
+    border-style: double;
+    background: radial-gradient(blue, red, white);
+  
+  
+    border-radius: 0px 50px 0px 50px;
+    justify-content: center;
+    align-items : center;
+    padding: 3% 5% 5% 8%;
+    border-width : 10px ;
+  
+}
+
+div#1{
+    height: 200px;
+    width: 300px;
+    background-color: forestgreen;
+    z-index: 1;
+}
+
+div#2{
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+}
+

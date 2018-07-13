@@ -1,0 +1,42 @@
+body{
+    background-color: appworkspace;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+
+    
+}
+
+form{
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 60px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    
+}
+div.champs{
+    display: flex;
+    flex-direction: column;
+    
+}
+div.envoi_reset{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+div.main{
+    padding: 40px;
+}
+
+div.envoi_reset{
+    color:white;
+    border-radius: 30px;
+}
+input#1{
+    background-color: black;
+}
