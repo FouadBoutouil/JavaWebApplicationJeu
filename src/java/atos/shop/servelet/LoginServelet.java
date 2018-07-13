@@ -37,8 +37,8 @@ public class LoginServelet extends HttpServlet {
         // Correctio du prof 
         // 1-connection  2-redirect
         if (cobay==null) {
-            
-            resp.sendRedirect("");
+            throw new RuntimeException("Erreur de connectio !!");
+            //resp.sendRedirect("");
         }else{
             // l'enregistrer le client ( objet dans session
             req.getSession().invalidate();
