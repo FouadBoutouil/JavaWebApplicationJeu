@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- doit creer une fonction qui 
+        - prends en paramettre un tableau de mot
+        - choisis un mot au hazard 
+        - affiche des étoiles a la place des lettre Sauf la premiere lettre 
+        - propose a l'utilisateur de rentrer un mot 
+        - le compare avec notre mot si un caractere est trouver l'afficher au lieu de l'etoile 
+        - tester si ya plus d'etoile dans le tableau afficher gagné sinon perdu 
+        - le joueur a que 9 esseais 
+    -->
+    <body>
+        <div>TODO write content</div>
+        <script>
+            function Random(max) {
+                return Math.floor(Math.random() * Math.floor(max + 1));
+            }
+            var motus = function (tab) {
+                var motChoisi = tab[Random(tab.length)];
+                var motCache = new Array(motChoisi.length);
+                // remplir le mot 
+                motCache.fill('*');
+                //remplacer la premiere valeur du tableau par la premiere lettre du motchoisi
+                motCache[0] = motChoisi.charAt(0);
+
+                // remplir le mot avec les (*) manuellement 
+//                for (var i = 1; i < motCache.length; i++) {
+//                    motCache.repl = '*';
+//                }
+                // transformer le tableau en string
+                var motAtrouve = motCache.join();
+                // demander a l'itilisateur de rentrer un mot ( tester la longueur )
+                console.log(motCache);
+                var motPropose = prompt("Saisissez votre texte :");
+                // jusdte un teste o n affiche le mot G*******
+                alert(motAtrouve);
+                alert('avant le if');
+                // comparer les deux chaine et si un caractere correspond l'afficher a la place de l'etoile
+                var tour = 0;
+                
+                    if (tour < 4) {
+                    
+                        for (var j = 1; j < motAtrouve.length; j++) {
+                            if (motCache[j] == '*') {
+                                // on compare le cazractere un a un
+                                if (motAtrouve[j] == motPropose[j]) {
+                                    // affectation
+                                    motCache.replace(motAtrouve[j],motChoisi.charAt(j)); 
+                                    //hello.replaceAt(2, "!!")
+                                }
+                                ;
+                                tour++;
+                            } else {
+                                alert ('je suis dans le else');
+                                alert(motCache);
+                                alert('BRAVO');
+
+                            }
+                        }
+                    
+                    alert('VOUS avez depasser le nombre dessais, voici le mot :');
+                    console.log(motChoisi);
+                }
+
+
+
+
+
+
+
+
+
+
+                var motCache =
+                        alert(motCache);
+            }
+
+        </script>
+    </body>
+</html>

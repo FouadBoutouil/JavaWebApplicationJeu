@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <script>
+            function replaceAtIndex(mot, i,lettre){
+              var motAretourner = mot.substring(0,i)+ lettre + mot.substring(i,mot.length-1);  
+            }
+            // definir la liste des mots posssibles 
+            var mots = ["parler","jouer","dormir","dansde"];
+            // choix aléatoire du mot a trouver
+            indiceMotSercret = Math.random()*mots.length;
+            var motSecret = mots[ indiceMotSercret ];
+            // on itere tant que l'utilisateur na pas trouver
+            var motChiffre = new Array(motSecret.length).fill('*').join("*");
+            
+            do{
+                var trouve = false;
+                // saisir le mot
+                var mot = prompt('entrez votre tentative:');
+                // compare lettre par ettre et construit la diference
+                for (var i = 0; motSecret.length < max; i++) {
+                    if(mot[i]==motSecret[i]){
+                        motChiffre = replaceAtIndex(motChiffre,i,lettre);
+                        
+                    }
+                }
+                // affiche le résultat a l'utilisateur
+                alert("résultat");
+                // 
+            }
+            while(trouve ===false);
+                    
+            
+        </script>
+    </body>
+</html>

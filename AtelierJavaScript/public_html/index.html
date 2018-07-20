@@ -14,21 +14,32 @@ and open the template in the editor.
     <body>
         <div>TODO write content</div>
         <script>
-            var pre = function(a) {
-                if (a % 2 == 0) {
+            var pre = function (a) {
+                if (a % 2 === 0) {
                     return false;
                 } else
                 {
-                    for (var i = 2; i < a ; i++) {
-                        if (a % i == 0) {
+                    for (var i = 2; i < a; i++) {
+                        if (a % i === 0) {
                             return false;
                         }
                     }
                 }
                 return true;
             };
+
+            var cp = function (pays) {
+                var tab = ['belgique', 'senegal', 'italie'];
+                for (var item in tab) {
+                    if (item === pays)
+                        return false;
+                }
+                return true;
+            }
             
-           
+
+
+
 //            var tab = ['a','ae','y','u','ba','bc','c'];
 
         </script>
