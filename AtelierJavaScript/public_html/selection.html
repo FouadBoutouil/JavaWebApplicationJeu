@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+
+            .joueurs, .ingredients{
+                display: flex;
+            }
+            .joueur, .ingredient{
+                min-width: 150px;
+                min-height: 200px;
+                background-color: blue;
+                border-radius: 20px;
+                margin: 10px;
+                box-shadow: 20px;
+            }
+            .selectionne{
+                background-color: gray ;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="joueurs">
+            <div id="premierJoueur" class="joueur" onclick="ch(this)"></div>
+            <div class="joueur" onclick="ch(this)"></div>
+            <div class="joueur" onclick="ch(this)"></div>
+        </div>
+
+        <div class="ingredients">
+            <div class="ingredient"></div>
+            <div class="ingredient"></div>
+            <div class="ingredient"></div>
+            <div class="ingredient"></div>
+        </div>
+        <script>
+           function ch(tag) {
+               tag.classList.toggle("selectionne"); 
+//            if(tag.classList.containe("selectionne")){
+//            tag.classList.remove("selectionne");    
+//            tag.classList.add("selectionne");
+//            }{
+//                tag.classList.add("selectionne")
+//            }
+//            
+            }
+        </script>
+    </body>
+</html>
