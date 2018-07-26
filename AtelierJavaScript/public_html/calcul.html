@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <form id="monFormulaire">
+            <label> Pseudo       : </label>    <input name="prenom" /><br>
+            <label> Mot de passe : </label>    <input name="mdp" /><br>
+            <label> confirmer mdp: </label>    <input name="cmdp" /><br>
+            <label> Mail         : </label>    <input name="mail" /><br>
+            <button> valider </button>
+        </form>
+        <script src="JS/jquery-3.3.1.js" type="text/javascript"></script>
+        <script>
+            function verifi(){
+               // mot de passe1 entre 3 et 8 caracyere
+               // le input est facultatif tout comme les les abostrophes
+                var mdp1 = $('input[name=mdp]').val();
+                if(mdp1.length < 3 || mdp1.length>8){
+                    alert('le mot de passe doit contenir entrer 3 et 8 caractere');
+                }
+                // valide que le mot de passe 1 et 2 sont identique
+                if(mdp1 != $('input[name=cmdp]').val()){
+                    alert('le mot de passe doit co caractere');
+                }
+                // valider mail
+                var email = $('[name=email]').val();
+                if(! email.match("[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+")){
+                    alert('Email Invalid');
+                }
+            }
+         $('button').click(verifi);   
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tableau-donnees">TODO write content</div>
+
+        <script src="JS/jquery-3.3.1.js" type="text/javascript"></script>
+        <script>
+            function calback(object) {
+                // je genere mon tableau ici 
+                var codeHtmlGenere = "";
+                codeHtmlGenere += "<table>";
+
+                for (var i in object) {
+                    // je construit mon tableau ici 
+                    // aprés je l'inject dans le codeHtmlGenere ( dans le div prévu ) 
+
+                    codeHtmlGenere += "<tr>";
+
+                    codeHtmlGenere += "<td>" + object[i].id + "</td>";
+                    codeHtmlGenere += "<td>" + object[i].name + "</td>";
+                    codeHtmlGenere += "<td>" + object[i].mass + "</td>";
+                    codeHtmlGenere += "<td>" + object[i].recclass + "</td>";
+                    codeHtmlGenere += "<td>" + object[i].year + "</td>";
+
+                    codeHtmlGenere += "</tr>";
+
+                }
+                codeHtmlGenere += "</table>";
+                // la fonction remplace le contenu de l'element du dom ciblé par ce qu'il ya dans la fonction html
+                $('.tableau-donnees').html(codeHtmlGenere);
+                $('td').each(callback);
+                $('td:nth-of-type(5)').each(formateDate);
+
+            }
+            // on passe a notre fonction Jquery le document Json et la fonction
+            // sans cette ligne la callback a été appelé
+            // c'est cette fonction qui affiche le tableau
+            $.getJSON("Json/meteorite.json", calback);
+
+            function callback(index, element) {
+                // on aurrrai pu cibler lelement dom avec containt (undifined)
+                if ($(element).html() == 'undefined') {
+                    $(element).html('***********');
+                }
+            }
+            function formateDate(index, element) {
+                obj = $(element);
+                obj.html(obj.html().substring(0, 10));
+              }
+
+
+
+
+        </script>
+    </body>
+</html>
